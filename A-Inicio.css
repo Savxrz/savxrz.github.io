@@ -1,0 +1,96 @@
+/* ESTILO TODAS LAS PAGINAS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ESTILO PARA EL TEXTO Y EL PARRAFO */
+.head
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(inicial.jpg);
+    background-size: cover;
+    background-position: center;
+   /* margin-bottom: 10px; */
+}
+.cuerpo{
+    max-width: 12000px;
+    margin: 20 auto;
+    padding: 0 40px;
+}
+
+/* ESTILO PARA EL MANU DE NEVAGACION */
+
+.nav-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    margin-top: 37px;
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 2px;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid rgb(230, 27, 27);
+   /* color: rgb(230, 27, 27); */
+}
+
+/* ESTILO PARA LOS DIFERENTES TIPOS DE TEXTO DE LA PAGINA */
+
+.cuerpo{
+    max-width: 600px;
+    color: #fff;
+    /* margin-top: 15%; */
+    padding-bottom: 10px;
+    margin-top: 150px;
+}
+.head h1{
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+.head p{
+    font-size: 12px;
+    line-height: 22px;
+}
+span{
+    color: rgb(230, 27, 27);
+}
+
+
+.btn {
+    border-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(230, 27, 27);
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 1130px;
+}
+
+
+.btn:hover{
+    background-color: rgb(230, 27, 27);
+    font-size: 16px;
+}

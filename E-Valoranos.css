@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* ESTILO PARA EL MANU DE NEVAGACION */
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    margin-top: 37px;
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 2px;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid rgb(230, 27, 27);
+   /* color: rgb(230, 27, 27); */
+}
+.head-E {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(grupo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ESTILO PARA EL FORMULARIO */
+.fr {
+    /* margin-left: 470px;
+    background-color: rgb(36, 35, 35, 0.6);
+    margin-right: 560px;
+    padding-bottom: 40px; */
+
+    width: 350px;
+    background-color: rgb(36, 35, 35, 0.6);    
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: white; 
+    box-shadow: 7px 13px 37px #000;
+    text-align: left;
+    gap: 2em;
+    display: grid;
+}
+
+.fr .todo {
+    margin-right: 20px;
+}
+
+.fr h1 {
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+.fr h2 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-right: 70px;
+}
+.tx{
+    background-color: transparent;
+    text-decoration: none;
+    width: 330px;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none; 
+    border-bottom: 1px solid rgb(230, 27, 27);
+    color: white; 
+    font-size: 15px;
+}
+
+.tx:focus{
+    border-bottom: 7px slid rgb(230, 27, 27);
+}
+
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select{
+    display: inline-block;
+    width: 350px;
+    padding: 10px;
+    background: transparent;
+    color: rgb(141, 136, 136);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(230, 27, 27);
+    font-size: 16px;
+}
+
+
+.op{
+    background-color: rgb(36, 35, 35, 0.6);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px; 
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(230, 27, 27);
+    color: rgb(0, 0, 0);}
+
+
+::placeholder {
+    color: rgb(68, 67, 65);
+}
+
+.fr .valor {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+
+.btn {
+    border-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(230, 27, 27);
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn:hover{
+    background-color: rgb(230, 27, 27);
+    font-size: 16px;
+}
+
+
+.fr .rd {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio label {
+    margin-right: 60px;
+    color: gray;
+}
+

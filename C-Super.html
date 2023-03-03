@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPPERVIVIENTES</title>
+    <link rel="stylesheet" href="C-Super.css">
+</head>
+<body>
+    <div class="head-C">
+        <div clase="nav-1">
+            <!--MENU DE NAVEGACÍON-->
+            <nav>
+                <ul>
+                    <li><a href="A-Inicio.html">Inicio</a></li>
+                    <li><a href="B-Historia.html">Historia</a></li>
+                    <li><a href="C-Super.html">Supervivientes</a></li>
+                    <li><a href="D-Libros(FRM).html">Libros</a></li>
+                    <li><a href="E-Valoranos.html">Valoranos</a></li>
+                </ul>
+            </nav>
+    </div> 
+    <table class="tabla" id="tb">
+        <caption>
+            SUPERVIVIENTES DEL <span>GENOCIDIO</span>
+        </caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Edad</th>
+                <th>Actualidad</th>
+                <th>Testimonios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Margot Friedländer</td>
+                <td>05/11/1921</td>
+                <td>101  años</td>
+                <td>Vive en alemania</td>
+                <td><input type="button" onclick="video_1()" value= "Escucha su historia" class="btn"></td>
+            </tr>
+            <tr>
+                <td>Jacobo Drachman</td>
+                <td>01/01/1935</td>
+                <td>88 años</td>
+                <td>Lleva 49 años en Israel</td>
+                <td><input type="button" onclick="video_2()" value= "Escucha su historia" class="btn"></td>
+            </tr>
+            <tr>
+                <td>Charlotte de Grünberg</td>
+                <td>12/05/1933</td>
+                <td>90 años</td>
+                <td>Profesora Universitaria y madre</td>
+                <td><input type="button" onclick="video_3()" value= "Escucha su historia" class="btn"></td>
+            </tr>
+            <tr>
+                <td>Jorge Klainman</td>
+                <td>28/03/1928</td>
+                <td>96 años</td>
+                <td>Fallecio en 2021</td>
+                <td><input type="button" onclick="video_4()" value= "Escucha su historia" class="btn"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let nueva = false; // inicializamos una variable en falso
+
+        function video_1() {
+            let fila = document.createElement("tr") // Creamos la fila
+            let celda = fila.insertCell(0) 
+            celda.colSpan = "5"; // Dentro de la fila creamos 5 celdas unidas 
+
+            celda.innerHTML = ' <center> <iframe width="300" height="225" src="https://www.youtube.com/embed/GgoQ98MBb9s?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>' // Dentro de la celda ngresamos este codigo html
+
+            let boton = event.target; // Obtenemos el boton donde hemos hecho click
+            let filaPadre = boton.parentNode.parentNode; // obtenems la fila del boton
+
+            if (nueva) { // Si la fila ya exsiste la eliminmos 
+            filaPadre.nextElementSibling.remove();
+            nueva = false;
+            } else { // Si esta en falso, agregarla 
+                filaPadre.insertAdjacentElement("afterend", fila);
+                nueva = true;
+            }
+        }
+        function video_2() {
+            let fila = document.createElement("tr")
+            let celda = fila.insertCell(0)
+            celda.colSpan = "5";
+
+            celda.innerHTML = ' <center> <iframe width="300" height="225" src="https://www.youtube.com/embed/4i09Hh2Tjus?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </center>'
+
+            let boton = event.target; 
+            let filaPadre = boton.parentNode.parentNode; 
+
+            if (nueva) { 
+            filaPadre.nextElementSibling.remove();
+            nueva = false;
+            } else { 
+                filaPadre.insertAdjacentElement("afterend", fila);
+                nueva = true;
+            }
+        }
+        function video_3() {
+            let fila = document.createElement("tr")
+            let celda = fila.insertCell(0)
+            celda.colSpan = "5";
+
+            celda.innerHTML = ' <center> <iframe width="300" height="225" src="https://www.youtube.com/embed/FkVQFIWs8x4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'
+
+            let boton = event.target;
+            let filaPadre = boton.parentNode.parentNode; 
+
+            if (nueva) { 
+            filaPadre.nextElementSibling.remove();
+            nueva = false;
+            } else { 
+                filaPadre.insertAdjacentElement("afterend", fila);
+                nueva = true;
+            }
+        }
+        function video_4() {
+            let fila = document.createElement("tr")
+            let celda = fila.insertCell(0)
+            celda.colSpan = "5";
+
+            celda.innerHTML = ' <center> <iframe width="300" height="225" src="https://www.youtube.com/embed/oF2XrTmWmp8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'
+
+            let boton = event.target;
+            let filaPadre = boton.parentNode.parentNode; 
+
+            if (nueva) { 
+            filaPadre.nextElementSibling.remove();
+            nueva = false;
+            } else { 
+                filaPadre.insertAdjacentElement("afterend", fila);
+                nueva = true;
+            }
+        }
+    
+    </script>
+</body>
+</html>
